@@ -1,0 +1,179 @@
+//
+// Created by xiaoman1221 on 2025/10/9.
+//
+#include <stdio.h>
+#include <stdlib.h>
+
+void main()
+{
+    printf("欢迎来到本系统\n请按照以下提示完成对系统的操作\n");
+    printf("[1]增\n");
+    printf("[2]删\n");
+    printf("[3]改\n");
+    printf("[4]查\n");
+    printf("[0]退出本程序\n");
+    printf("请输入：");
+    int num;
+    scanf("%d", &num);
+    getchar();
+    switch (num)
+    {
+        case 0:
+        printf("感谢您使用本系统，再见");
+        exit(0);
+        case 1:
+        printf("增加了一条数据");
+        break;
+        case 2:
+        printf("删除了一条数据");
+        break;
+        case 3:
+        printf("更新了一条数据");
+        break;
+        case 4:
+        printf("这是一条数据");
+        break;
+    default:
+        printf("未知的输入！！，程序退出");
+        exit(1);
+    }
+}
+
+
+
+
+//
+// Created by xiaoman1221 on 2025/10/9.
+//
+#include <stdio.h>
+void main()
+{
+    int n = 0;
+    for (int i = 1; i <= 100; i++)
+    {
+        n = n + i;
+    }
+    printf("%d", n);
+
+}
+
+
+
+
+//
+// Created by xiaoman1221 on 2025/10/9.
+//
+#include <stdio.h>
+void main()
+{
+
+    int n = 0,i = 0;
+    while (i<100)
+    {
+        i++;
+        n = n + i;
+    }
+    printf("%d",n);
+}
+
+
+
+
+
+
+//
+// Created by xiaoman1221 on 2025/10/9.
+//
+#include <stdio.h>
+void main()
+{
+
+    int n = 0,i = 0;
+    do
+    {
+        ++i;
+        n = n + i;
+    }while (i < 100);
+    printf("%d",n);
+}
+
+
+
+
+//
+// Created by xiaoman1221 on 2025/10/9.
+//
+#include <stdio.h>
+void main()
+{
+    printf("1000以内符合条件的是\n");
+    for(int i = 0; i <= 1000; i++)
+    {
+        if(i % 3 == 2 && i % 5 == 3 && i % 7 == 2)
+        {
+            printf("%d ",i);
+        }
+    }
+}
+
+
+
+
+
+//
+// Created by xiaoman1221 on 2025/10/9.
+//
+#include <stdio.h>
+int main()
+{
+    for(int i = 0;i <= 10;i++)
+    {
+        for(int j = 0;j <= i;j++)
+        {
+            printf(" * ");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//
+// Created by xiaoman1221 on 2025/10/9.
+//
+#include <stdio.h>
+void main()
+{
+    for (int i = 1; i <= 9; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf(" %dx%d=%d ",i ,j,i * j);
+        }
+        printf("\n");
+    }
+}
+
+
+//
+// Created by xiaoman1221 on 2025/10/9.
+//
+#include <stdio.h>
+void main()
+{
+    int a,b,c;
+    for(a=0;a<=20;a++)
+    {
+        for(b=0;b<=33;b++)
+        {
+            for(c=0;c<=100;c++)
+            {
+                if(a+b+c==100 && a*5 + b * 3  + c/3.0 == 100)
+                {
+                    printf("公=%2d,母=%2d,雏=%2d\n",a,b,c);
+                }
+            }
+        }
+    }
+}
+
+

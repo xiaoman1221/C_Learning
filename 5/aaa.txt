@@ -1,0 +1,47 @@
+//
+// Created by xiaoman1221 on 2025/9/25.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    int xiaoming;
+    printf("Enter 赵子懿: ");
+    scanf("%d", &xiaoming);
+    getchar();
+    if (xiaoming <= 0)
+    {
+        printf("直接打死 \n");
+    }else if (xiaoming == 100)
+    {
+        printf("吹牛逼满分也去不了");
+    }else if (xiaoming < 100)
+    {
+        printf("去不了");
+    }else
+    {
+        printf("作弊了是吧BYD，直接打死");
+    }
+
+}
+
+
+//
+// Created by xiaoman1221 on 2025/9/25.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    for (int i = 1; i <= 9; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%dx%d=%d   ",i ,j,i * j);
+        }
+        printf("\n");
+    }
+}
+

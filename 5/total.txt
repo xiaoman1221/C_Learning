@@ -1,0 +1,168 @@
+//
+// Created by xiaoman1221 on 2025/9/25.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    int a =0;
+    printf("Enter the first number: ");
+    scanf("%d",&a);
+    getchar();
+    if(a>0)
+    {
+        printf("%d是正数",a);
+    }else if(a<0)
+    {
+        printf("%d是负数",a);
+    }else
+    {
+        printf("是%d",a);
+    }
+}
+
+
+//
+// Created by xiaoman1221 on 2025/9/25.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    int a;
+    printf("Enter a number: ");
+    scanf("%d", &a);
+    getchar();
+
+    if(a % 2 == 0)
+    {
+        printf("%d是偶数\n", a);
+    }else
+    {
+        printf("%d是奇数\n", a);
+    }
+}
+
+//
+// Created by xiaoman1221 on 2025/9/25.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    int a,b,c;
+    printf("Enter A: ");
+    scanf("%d", &a);
+    printf("Enter B: ");
+    scanf("%d", &b);
+    printf("Enter C: ");
+    scanf("%d", &c);
+    if(a>=b && a>=c)
+    {
+        printf("A%d最大\n",a);
+        if(b>c)
+        {
+            printf("C%d最小\n", c);
+            printf("B%d中不溜\n",b);
+        }else
+        {
+            printf("B%d最小\n", b);
+            printf("C%d中不溜\n",c);
+        }
+    }else if(b>=a && b>=c)
+    {
+        printf("B%d最大\n",b);
+        if(a>c)
+        {
+            printf("C%d最小\n", c);
+            printf("A%d中不溜\n",a);
+        }
+    }else
+    {
+        printf("C%d最大\n",c);
+        if(a>b)
+        {
+            printf("B%d最小\n", b);
+            printf("A%d中不溜\n",a);
+        }
+    }
+}
+
+
+
+//
+// Created 666666by xiaoman1221 on 2025/9/25.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    char a;
+    double x,y;
+    printf("输入+,-,*,/ ：");
+    scanf("%c",&a);
+    getchar();
+    printf("输入两个数字：");
+    scanf("%lf%lf",&x,&y);
+    getchar();
+    if(a=='+')
+    {
+        printf("%.2lf+%.2lf=%.2lf\n",x,y,x+y);
+    }else if(a=='-')
+    {
+        printf("%.2lf-%.2lf=%.2lf\n",x,y,x-y);
+    }else if(a=='*')
+    {
+        printf("%.2lf*%.2lf=%.2lf\n",x,y,x*y);
+    }else if(a=='/')
+    {
+        if(y==0)
+        {
+            printf("除数不为0");
+        }else
+        {
+            printf("%.2lf/%.2lf=%.2lf\n",x,y,x/y);
+        }
+    }else
+    {
+        printf("未知运算符");
+    }
+}
+
+
+//
+// Created by xiaoman1221 on 2025/9/25.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    int xiaoming;
+    printf("输入成绩（0-100）: ");
+    scanf("%d", &xiaoming);
+    getchar();
+    if (xiaoming >= 90 && xiaoming <= 100){
+        printf("等级A\n");
+    }else if (xiaoming >= 80 && xiaoming < 90)
+    {
+        printf("等级B\n");
+    }else if (xiaoming >=70 && xiaoming < 80)
+    {
+        printf("等级C\n");
+    }else if (xiaoming >=60 && xiaoming < 70)
+    {
+        printf("等级D\n");
+    }else if (xiaoming <=59 && xiaoming >= 0)
+    {
+        printf("等级F\n");
+    }
+    else{
+        printf("错误数字");
+    }
+
+}}

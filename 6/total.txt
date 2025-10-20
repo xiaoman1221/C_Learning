@@ -1,0 +1,88 @@
+//
+// Created by xiaoman1221 on 2025/9/29.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    int sec;
+    printf("输入安全等级: ");
+    scanf("%d", &sec);
+    getchar();
+    switch(sec)
+    {
+        case 1:
+            printf("安全等级为：正常");
+            break;
+        case 2:
+            printf("安全等级：警报！需要注意");
+            break;
+        case 3:
+            printf("安全等级：危险！请立即终止");
+            break;
+        case 4:
+            printf("安全等级 ：立即停产");
+            break;
+        default:
+            printf("输入有问题：请重新运行此程序！程序已退出");
+            break;
+    }
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+//
+// Created by xiaoman1221 on 2025/9/29.
+//
+int main(){
+    int a,b;
+    scanf("%d%d",&a,&b);
+    getchar();
+    int c = 1,d;
+    for (c;c<=b;c++)
+    {
+        scanf("%d",&d);
+        getchar();
+       if(d < 0){
+            printf("Game Over");
+            exit(0);
+        }
+        switch (c){
+        case 1:
+            if(a>d){
+                printf("Too small\n");
+            }else if(a==d){
+                printf("Bingo!");
+                exit(0);
+            }else if (a<d){
+                printf("Too big\n");
+            }
+            break;
+        case 2:
+        case 3:
+            if(a>d){
+                printf("Too small\n");
+            }else if(a==d){
+                printf("Lucky You!");
+                exit(0);
+            }else if (a<d){
+                printf("Too big\n");
+            }
+            break;
+        default:
+            if(a>d){
+                printf("Too small\n");
+            }else if(a==d){
+                printf("Good Guess!");
+                exit(0);
+            }else if (a<d){
+                printf("Too big\n");
+            }
+            break;
+        }
+    }
+    printf("Game Over");
+    exit(0);
+}

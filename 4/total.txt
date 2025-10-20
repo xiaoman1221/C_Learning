@@ -1,0 +1,99 @@
+//
+// Created by xiaoman1221 on 2025/9/22.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    float f = 1.2;
+    double d = 3.75;
+    int x = (int)(f + d);
+    f = (double)(x) + d;
+    printf("%d \n%f",x,f);
+}
+
+
+//
+// Created by xiaoman1221 on 2025/9/22.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    char ch;
+    int num;
+    float f;
+    printf("输入char类型数据：\n");
+    scanf("%c",&ch);
+    getchar();
+    printf("请输入int类型数据\n");
+    scanf("%d",&num);
+    getchar();
+    f=(float)num + (float)ch;
+    printf("%f\n",f);
+
+}
+
+//
+// Created by xiaoman1221 on 2025/9/22.
+//
+
+#include <math.h>
+#include <stdio.h>
+
+void main()
+{
+    int num1,num2;
+    printf("请输入两个数，如果第一个数大则表示选鱼，否则选熊掌\n");
+    printf("请输入：");
+    scanf("%d",&num1);
+    getchar();
+    printf("请再次输入：");
+    scanf("%d",&num2);
+    getchar();
+    printf("你获得了：");
+    num1 > num2 ? printf("鱼") : printf("熊掌");
+
+}
+
+//
+// Created by xiaoman1221 on 2025/9/22.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    int year;
+    printf("请输入年份：");
+    scanf("%d",&year);
+    getchar();
+    if((year%4==0&&year%100!=0)||year%400==0)
+    {
+        printf("%d 年是闰年",year);
+    }else
+    {
+        printf("%d 年是平年",year);
+    }
+}
+
+//
+// Created by xiaoman1221 on 2025/9/22.
+//
+
+#include <stdio.h>
+
+void main()
+{
+    printf("_Bool类型 \t我的容量为:%lu \n",sizeof(_Bool));
+    printf("char类型 \t我的容量为:%lu \n",sizeof(char));
+    printf("short int类型 \t我的容量为:%lu \n",sizeof(short int));
+    printf("int类型 \t我的容量为:%lu \n",sizeof(int));
+    printf("long int类型 \t我的容量为:%lu \n",sizeof(long int));
+    printf("float类型 \t我的容量为:%lu \n",sizeof(float));
+    printf("double类型 \t我的容量为:%lu \n",sizeof(double));
+
+}
+
